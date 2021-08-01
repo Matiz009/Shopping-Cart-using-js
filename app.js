@@ -2,11 +2,17 @@ let product = document.querySelector(".product");
 let Button = document.querySelector(".addButton");
 let price = document.querySelector(".productPrice");
 let quantity = document.querySelector(".productQuantity");
+let remove = document.querySelector(".removeButton");
 
 let cart = [];
 if (localStorage.cart) {
     cart = JSON.parse(localStorage.cart);
 }
+
+remove.addEventListener("click", function() {
+    console.log(localStorage.clear());
+    location.reload();
+});
 
 Button.addEventListener("click", function() {
     for (let i in cart) {
