@@ -32,8 +32,10 @@
 
         </ul>
     </div>
-     
-     <button style="background-color: palegreen;" class="removeButton">Remove All</button>
+    <div style="text-align: center;">
+        <button class="removeButton" style="background-color: palegreen">Remove All</button>
+    </div>
+
     <script src="/mini_shopping_cart/app.js"></script>
 </body>
 
